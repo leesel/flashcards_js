@@ -1,1 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcards</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 class="rainbow-text">Flashcards</h1>
+    <h3>Create a New Card</h3>
+    <label for="makeQuestion" id="q-title">Question:</label><br>
+    <input type="text" id="makeQuestion" name="makeQuestion" value="What is the capital of Brazil?"><br>
+    <label for="makeAnswer" id="q-title">Answer:</label><br>
+    <input type="text" id="makeAnswer" name="makeAnswer" value="Brasilia"><br><br>
+    <button id= "myBtn" onclick="addCard()">Create Card</button>
+    <h1 class="rainbow-text">Your Cards</h1>
+    <div id="card_list">
+      <div class="card hidden">
+        <div class="question"></div>
+        <div class="answer"></div>
+        <button class="edit">Edit</button>
+        <button class="delete">Delete</button>
+      </div> 
+    </div>
+</body>
+</html>
+
+
+
 

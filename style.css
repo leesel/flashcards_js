@@ -1,1 +1,185 @@
-
+#myBtn {
+    width: 500px;
+    height: 70px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    background-color: #90d5ec;
+  background-image: linear-gradient(315deg, #90d5ec 0%, #fc575e 74%);
+    font-family: 'Poiret One', cursive;
+    border-radius: 12px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #myBtn:hover {
+    background: #bbb;
+    color: black;
+    background-color: #eec0c6;
+    background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
+  
+  }
+  
+  body {
+    background-color: #EDDDD4;
+  /*   background-color: #bdd4e7;
+  background-image: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%); */
+  
+  }
+  
+  h1 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 800;
+    font-size: 5em;
+    width: 6em;
+    line-height: 0.9em;
+    margin-left: auto;
+    margin-right: auto;
+  /*   margin-top: 1.5em;
+    margin-top: calc(50vh - 1em); */
+  }
+  
+  /* Style the rainbow text element. */
+  .rainbow-text {
+    /* Create a conic gradient. */
+    /* Double percentages to avoid blur (#000 10%, #fff 10%, #fff 20%, ...). */
+    background: #CA4246;
+    background-color: #CA4246;
+    background: conic-gradient(
+      #CA4246 16.666%, 
+      #E16541 16.666%, 
+      #E16541 33.333%, 
+      #F18F43 33.333%, 
+      #F18F43 50%, 
+      #8B9862 50%, 
+      #8B9862 66.666%, 
+      #476098 66.666%, 
+      #476098 83.333%, 
+      #A7489B 83.333%);
+    
+    /* Set thee background size and repeat properties. */
+    background-size: 57%;
+    background-repeat: repeat;
+    
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    
+    /* Animate the text when loading the element. */
+    /* This animates it on page load and when hovering out. */
+    animation: rainbow-text-animation-rev 0.5s ease forwards;
+  
+    cursor: pointer;
+  }
+  
+  /* Add animation on hover. */
+  .rainbow-text:hover {
+    animation: rainbow-text-animation 0.5s ease forwards;
+  }
+  
+  /* Move the background and make it larger. */
+  /* Animation shown when hovering over the text. */
+  @keyframes rainbow-text-animation {
+    0% {
+      background-size: 57%;
+      background-position: 0 0;
+    }
+    20% {
+      background-size: 57%;
+      background-position: 0 1em;
+    }
+    100% {
+      background-size: 300%;
+      background-position: -9em 1em;
+    }
+  }
+  
+  /* Move the background and make it smaller. */
+  /* Animation shown when entering the page and after the hover animation. */
+  @keyframes rainbow-text-animation-rev {
+    0% {
+      background-size: 300%;
+      background-position: -9em 1em;
+    }
+    20% {
+      background-size: 57%;
+      background-position: 0 1em;
+    }
+    100% {
+      background-size: 57%;
+      background-position: 0 0;
+    }
+  }
+  
+  /*h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 72px;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }*/
+  
+  h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 2em;
+    line-height: 0.9em;
+  }
+  
+  input, label {
+    font-family: 'Poiret One', cursive;
+    padding:10px;
+    margin:10px 0;
+  }
+  
+  label {
+   color:black;
+   font-size: 20px;
+  }
+  input {
+  /*   background-color: #bdd4e7;
+    background-image: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%); */
+    font-family: 'Montserrat', sans-serif;
+    background-color: #EDDDD4;
+    color: black;
+    border-color:#EDDDD4;
+    width: 95%;
+    font-size:1em;
+  }
+  
+  /* .question, .answer {
+    width: 500px;
+    height: 70px;
+    font-family: 'Montserrat', sans-serif;
+  } */
+  
+  #card_list{
+    display: flex;
+  }
+  .card {
+  /*   width: 500px; */
+  /*   length: 90px; */
+    height: 70px;
+    font-family: 'Montserrat', sans-serif;
+    color:white;
+    border-width: 10px;
+    border-color: black;
+    width: 25%;
+    background-color: #07457a;
+    margin-right:5px;
+    border-radius: 5px;
+  }
+  
+  .hidden {
+    display:none;
+  }
+  
+  .edit, .delete {
+    color: black;
+    border-width: 2px;
+    border-color: #07457a;
+    width: 100px;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+  }
